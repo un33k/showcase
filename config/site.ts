@@ -1,12 +1,11 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Waterloo Conservative Association",
-  description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+  name: "Waterloo CPC",
+  description: "Waterloo Conservative Association's website",
   mainNav: [
     {
-      title: "Home",
+      title: "About",
       href: "/",
     },
   ],
