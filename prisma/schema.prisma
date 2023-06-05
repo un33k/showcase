@@ -43,37 +43,40 @@ model Group {
   updatedAt DateTime @default(now())
   name      String   @unique
   isActive  Boolean  @default(false)
-  User      User[]
+  User      User?    @relation(fields: [userId], references: [id])
+  userId    String?
 }
 
 model User {
-  id             String       @id @default(cuid())
-  createdAt      DateTime     @default(now())
-  updatedAt      DateTime     @updatedAt
-  lastLoginAt    DateTime
-  email          String       @unique
-  username       String       @unique
-  password       String       @default(cuid())
-  sessionVersion Int          @default(1)
-  isVerified     Boolean      @default(false)
-  isActive       Boolean      @default(false)
-  firstName      String       @default("")
-  lastName       String       @default("")
-  language       String       @default("en")
-  role           Role         @default(USER)
+  id             String           @id @default(cuid())
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  email          String           @unique
+  username       String           @unique
+  password       String           @default(cuid())
+  sessionVersion Int              @default(1)
+  isVerified     Boolean          @default(false)
+  isActive       Boolean          @default(false)
+  firstName      String           @default("")
+  lastName       String           @default("")
+  language       String           @default("en")
+  role           Role             @default(USER)
+  lastLoginAt    DateTime?
   permissions    Permission[]
-  groupId        String?
   groups         Group[]
+  ContactMessage ContactMessage[]
 }
 
 model ContactMessage {
   id          String   @id @default(cuid())
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  language    String   @default("en")
   email       String
   subject     String
   content     String
   countryCode String
   ipAddress   String
-  language    String   @default("en")
+  user        User?    @relation(fields: [userId], references: [id])
+  userId      String?
 }
