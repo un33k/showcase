@@ -31,3 +31,6 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# all dist folders throughout the project
+**/dist/
