@@ -1,3 +1,10 @@
 {
-  "words": ["cspell", "cspell.config.js", "cspell.json", "qwik", "undici"]
+  "words": [
+    "cspell",
+    "cspell.config.js",
+    "cspell.json",
+    "qwik",
+    "tailwindcss",
+    "undici"
+  ]
 }
