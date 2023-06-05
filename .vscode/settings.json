@@ -1,4 +1,16 @@
 {
   "css.lint.unknownAtRules": "ignore",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "github.copilot",
+    "firsttris.vscode-jest-runner",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "bradlc.vscode-tailwindcss",
+    "matt-meyers.vscode-dbml"
+  ]
 }
