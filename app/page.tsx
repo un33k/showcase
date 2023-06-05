@@ -1,4 +1,4 @@
-import Navbar from "@/libs/ui/navBar"
+import Navbar from "@/libs/ui/navbar"
 
 export default function Home() {
   return (
