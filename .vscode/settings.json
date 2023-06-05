@@ -11,6 +11,7 @@
     "esbenp.prettier-vscode",
     "prisma.prisma",
     "bradlc.vscode-tailwindcss",
-    "matt-meyers.vscode-dbml"
+    "matt-meyers.vscode-dbml",
+    "nicolas-liger.dbml-viewer"
   ]
 }
