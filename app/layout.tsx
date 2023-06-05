@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={interFont.className}>{children}</body>
+    <html lang="en" data-theme="light">
+      <body className={`${interFont.className}`}>{children}</body>
     </html>
   )
 }

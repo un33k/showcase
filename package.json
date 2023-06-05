@@ -44,6 +44,7 @@
     "@types/uuid": "^9.0.1",
     "autoprefixer": "10.4.14",
     "commander": "^10.0.1",
+    "daisyui": "^3.0.3",
     "eslint": "^8.42.0",
     "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "^8.8.0",
