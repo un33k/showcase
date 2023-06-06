@@ -20,6 +20,9 @@ dependencies:
   next:
     specifier: ^13.4.4
     version: 13.4.4(@babel/core@7.22.1)(@opentelemetry/api@1.4.1)(react-dom@18.2.0)(react@18.2.0)
+  next-themes:
+    specifier: ^0.2.1
+    version: 0.2.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -4016,6 +4019,18 @@ packages:
     resolution: {integrity: sha512-md4cGoxuT4T4d/HDOXbrUHkTKrp/vp+m3aOA7XXVYwNsUNMK49g3SQicTSeV5GIz/5QVGAeYRAOlyp9OvlgsYA==}
     engines: {node: '>=10'}
     dev: true
+
+  /next-themes@0.2.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.4.4(@babel/core@7.22.1)(@opentelemetry/api@1.4.1)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /next@13.4.4(@babel/core@7.22.1)(@opentelemetry/api@1.4.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-C5S0ysM0Ily9McL4Jb48nOQHT1BukOWI59uC3X/xCMlYIh9rJZCv7nzG92J6e1cOBqQbKovlpgvHWFmz4eKKEA==}

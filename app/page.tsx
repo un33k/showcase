@@ -1,5 +1,5 @@
-import { ViewPortIndicator } from "@/libs/ui/debug"
-import Navbar from "@/libs/ui/navbar"
+import { ViewPortIndicator } from "@sc/libs/ui/debug"
+import Navbar from "@sc/libs/ui/navbar"
 
 export default function Home() {
   return (

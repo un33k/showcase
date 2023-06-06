@@ -1,8 +1,6 @@
-import { ViewPortIndicator } from "@/libs/ui/debug"
+import { interFont } from "@sc/styles/fonts"
 
-import { interFont } from "@/styles/fonts"
-
-import "@/styles/globals.css"
+import "@sc/styles/globals.css"
 
 export const metadata = {
   title: "Create Next App",

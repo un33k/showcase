@@ -1,8 +1,6 @@
 import { mdiDotsVertical, mdiMenu } from "@mdi/js"
 import Icon from "@mdi/react"
 
-import { appConfig } from "@/config/app"
-
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
