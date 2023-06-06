@@ -19,13 +19,13 @@ export default function Navbar() {
         </button>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">{appConfig.name}</a>
+        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
           <Icon
             path={mdiDotsVertical}
-            title="Menu"
+            title="Options"
             size={1}
             horizontal
             vertical

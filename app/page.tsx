@@ -1,11 +1,10 @@
+import { ViewPortIndicator } from "@/libs/ui/debug"
 import Navbar from "@/libs/ui/navbar"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-4">
-      <nav className="navbar w-full  border-4 border-red-500">
-        <Navbar />
-      </nav>
+    <div className="flex flex-col p-2 border-2  border-red-500">
+      <Navbar />
     </div>
   )
 }

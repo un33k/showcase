@@ -1,3 +1,5 @@
+import { ViewPortIndicator } from "@/libs/ui/debug"
+
 import { interFont } from "@/styles/fonts"
 
 import "@/styles/globals.css"
