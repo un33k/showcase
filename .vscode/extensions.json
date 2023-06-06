@@ -1,4 +1,16 @@
 {
-  "recommendations": ["dbaeumer.vscode-eslint", "unifiedjs.vscode-mdx"],
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "unifiedjs.vscode-mdx",
+    "streetsidesoftware.code-spell-checker",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "github.copilot",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "bradlc.vscode-tailwindcss",
+    "matt-meyers.vscode-dbml",
+    "nicolas-liger.dbml-viewer"
+  ],
   "unwantedRecommendations": []
 }
