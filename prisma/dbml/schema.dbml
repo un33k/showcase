@@ -27,7 +27,7 @@ Table User {
   language String [not null, default: 'en']
   role Role [not null, default: 'USER']
   lastLoginAt DateTime
-  permissions Permission [not null]
+  permissions Permission[] [not null]
   groups Group [not null]
   ContactMessage ContactMessage [not null]
 }

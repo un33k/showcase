@@ -8,7 +8,7 @@ A project tailored to showcase political individuals
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
  YAML                     1         6104          834            0         5270
- TypeScript               6          365           42           35          288
+ TypeScript               7          377           43           35          299
  JSON                     4          113            0            0          113
  Typescript JSX           5           90            8            0           82
  JavaScript               4           72            1            4           67
@@ -17,7 +17,7 @@ A project tailored to showcase political individuals
  CSS                      1            3            0            0            3
  Toml                     1            3            0            2            1
 --------------------------------------------------------------------------------
- Total                   27         6924          930           67         5927
+ Total                   28         6936          931           67         5938
 --------------------------------------------------------------------------------
 ```
 
