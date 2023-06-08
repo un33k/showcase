@@ -6,14 +6,7 @@ export default function Navbar() {
     <div className="navbar bg-base-100">
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
-          <Icon
-            path={mdiMenu}
-            title="Menu"
-            size={1}
-            horizontal
-            vertical
-            color="red"
-          />
+          <Icon path={mdiMenu} title="Menu" />
         </button>
       </div>
       <div className="flex-1">
@@ -21,14 +14,7 @@ export default function Navbar() {
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
-          <Icon
-            path={mdiDotsVertical}
-            title="Options"
-            size={1}
-            horizontal
-            vertical
-            color="red"
-          />
+          <Icon path={mdiDotsVertical} title="Options" />
         </button>
       </div>
     </div>

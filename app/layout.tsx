@@ -1,3 +1,5 @@
+import Navbar from "@sc/components/server/navbar"
+import { tm } from "@sc/libs/util/style/contact"
 import { interFont } from "@sc/styles/fonts"
 
 import "@sc/styles/globals.css"
@@ -14,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={`${interFont.className}`}>{children}</body>
+      <body className={tm(interFont.className, "p-4")}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
