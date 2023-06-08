@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-none">
-        <RotateSwapComponent onRotate={() => console.log("Component rotated!")}>
+        <RotateSwapComponent onClick={() => console.log("Component rotated!")}>
           <button className="btn btn-circle btn-ghost">
             <Icon path={mdiMenu} title="Menu" size={1} />
           </button>
@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="flex-none">
         <RotateComponent
           rotationDegrees={90}
-          onRotate={() => console.log("Component rotated!")}
+          onClick={() => console.log("Component rotated!")}
         >
           <button className="btn btn-circle btn-ghost">
             <Icon path={mdiDotsVertical} title="Options" size={1} />
