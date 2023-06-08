@@ -1,12 +1,12 @@
 import React, { ReactNode, useState } from "react"
 
-interface RotatingComponentProps {
+interface RotateComponentProps {
   children: ReactNode
   rotationDegrees?: number
   onRotate?: () => void
 }
 
-const RotatingComponent: React.FC<RotatingComponentProps> = ({
+const RotateComponent: React.FC<RotateComponentProps> = ({
   children,
   rotationDegrees = 180,
   onRotate,
@@ -26,7 +26,7 @@ const RotatingComponent: React.FC<RotatingComponentProps> = ({
     <div
       onClick={handleClick}
       style={{
-        transition: "transform 0.6s",
+        transition: "transform 0.4s",
         transform: `rotate(${rotation}deg)`,
         transformOrigin: "center",
       }}
@@ -36,4 +36,4 @@ const RotatingComponent: React.FC<RotatingComponentProps> = ({
   )
 }
 
-export default RotatingComponent
+export default RotateComponent
