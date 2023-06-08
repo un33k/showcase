@@ -3,7 +3,7 @@ import React, { ReactNode, useState } from "react"
 interface RotatingComponentProps {
   children: ReactNode
   degree?: number
-  onRotate?: () => void // make onRotate optional
+  onRotate?: () => void
 }
 
 const RotatingComponent: React.FC<RotatingComponentProps> = ({
@@ -16,7 +16,7 @@ const RotatingComponent: React.FC<RotatingComponentProps> = ({
   const handleClick = () => {
     const newRotation = rotation === 0 ? degree : 0
     setRotation(newRotation)
-    // only call onRotate if it is defined
+
     if (onRotate) {
       onRotate()
     }
