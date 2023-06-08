@@ -1,5 +1,5 @@
 import Navbar from "@sc/components/server/navbar"
-import { tm } from "@sc/libs/util/style/contact"
+import { tm } from "@sc/libs/util/style/merge"
 import { interFont } from "@sc/styles/fonts"
 
 import "@sc/styles/globals.css"
