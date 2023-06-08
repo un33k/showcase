@@ -9,7 +9,7 @@ A project tailored to showcase political individuals
 --------------------------------------------------------------------------------
  YAML                     1         6093          844            0         5249
  TypeScript               8          383           44           35          304
- Typescript JSX           6          147           21            1          125
+ Typescript JSX           6          167           21           17          129
  JSON                     4          119            0            0          119
  SQL                      2          111           24           26           61
  JavaScript               4           66            2            4           60
@@ -17,7 +17,7 @@ A project tailored to showcase political individuals
  CSS                      1            3            0            0            3
  Toml                     1            3            0            2            1
 --------------------------------------------------------------------------------
- Total                   30         6988          956           68         5964
+ Total                   30         7008          956           84         5968
 --------------------------------------------------------------------------------
 ```
 

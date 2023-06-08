@@ -3,13 +3,23 @@ import React, { ReactNode, useState } from "react"
 interface RotateComponentProps {
   children: ReactNode
   rotationDegrees?: number
-  onRotate?: () => void
+  rotationDuration?: number
+  onClick?: () => void
 }
 
+/**
+ * Rotate the children when clicked.
+ * @param children The children to render
+ * @param rotationDegrees  The degrees to rotate the children
+ * @param rotationDuration  The duration of the rotation in seconds
+ * @param onClick  The callback to call when the children is clicked
+ * @returns
+ */
 const RotateComponent: React.FC<RotateComponentProps> = ({
   children,
   rotationDegrees = 180,
-  onRotate,
+  rotationDuration = 0.6,
+  onClick,
 }) => {
   const [rotation, setRotation] = useState<number>(0)
 
@@ -17,8 +27,8 @@ const RotateComponent: React.FC<RotateComponentProps> = ({
     const newRotation = rotation === 0 ? rotationDegrees : 0
     setRotation(newRotation)
 
-    if (onRotate) {
-      onRotate()
+    if (onClick) {
+      onClick()
     }
   }
 
@@ -26,7 +36,7 @@ const RotateComponent: React.FC<RotateComponentProps> = ({
     <div
       onClick={handleClick}
       style={{
-        transition: "transform 0.6s",
+        transition: `transform ${rotationDuration}s`,
         transform: `rotate(${rotation}deg)`,
         transformOrigin: "center",
       }}
