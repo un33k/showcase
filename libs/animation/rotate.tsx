@@ -2,19 +2,19 @@ import React, { ReactNode, useState } from "react"
 
 interface RotatingComponentProps {
   children: ReactNode
-  degree?: number
+  rotationDegrees?: number
   onRotate?: () => void
 }
 
 const RotatingComponent: React.FC<RotatingComponentProps> = ({
   children,
-  degree = 180,
+  rotationDegrees = 180,
   onRotate,
 }) => {
-  const [rotation, setRotation] = useState<number>(degree)
+  const [rotation, setRotation] = useState<number>(0)
 
   const handleClick = () => {
-    const newRotation = rotation === 0 ? degree : 0
+    const newRotation = rotation === 0 ? rotationDegrees : 0
     setRotation(newRotation)
 
     if (onRotate) {
