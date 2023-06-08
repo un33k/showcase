@@ -26,7 +26,7 @@ const RotateComponent: React.FC<RotateComponentProps> = ({
     <div
       onClick={handleClick}
       style={{
-        transition: "transform 0.4s",
+        transition: "transform 0.6s",
         transform: `rotate(${rotation}deg)`,
         transformOrigin: "center",
       }}

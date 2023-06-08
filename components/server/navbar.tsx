@@ -11,10 +11,10 @@ export default function Navbar() {
       <div className="flex-none">
         <RotateSwapComponent onRotate={() => console.log("Component rotated!")}>
           <button className="btn btn-circle btn-ghost">
-            <Icon path={mdiMenu} title="Menu" />
+            <Icon path={mdiMenu} title="Menu" size={1} />
           </button>
           <button className="btn btn-circle btn-ghost">
-            <Icon path={mdiClose} title="Close" />
+            <Icon path={mdiClose} title="Close" size={1} />
           </button>
         </RotateSwapComponent>
       </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
           onRotate={() => console.log("Component rotated!")}
         >
           <button className="btn btn-circle btn-ghost">
-            <Icon path={mdiDotsVertical} title="Options" />
+            <Icon path={mdiDotsVertical} title="Options" size={1} />
           </button>
         </RotateComponent>
       </div>
