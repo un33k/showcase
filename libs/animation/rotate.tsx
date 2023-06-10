@@ -15,7 +15,7 @@ interface RotateComponentProps {
  * @param onClick  The callback to call when the children is clicked
  * @returns
  */
-const RotateComponent: React.FC<RotateComponentProps> = ({
+export const RotateComponent: React.FC<RotateComponentProps> = ({
   children,
   rotationDegrees = 180,
   rotationDuration = 0.6,
@@ -45,5 +45,3 @@ const RotateComponent: React.FC<RotateComponentProps> = ({
     </div>
   )
 }
-
-export default RotateComponent

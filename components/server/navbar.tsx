@@ -2,8 +2,7 @@
 
 import { mdiClose, mdiDotsVertical, mdiMenu } from "@mdi/js"
 import Icon from "@mdi/react"
-import RotateComponent from "@sc/libs/animation/rotate"
-import RotateSwapComponent from "@sc/libs/animation/rotateSwap"
+import { RotateComponent, RotateSwapComponent } from "@sc/libs/animation"
 
 export default function Navbar() {
   return (

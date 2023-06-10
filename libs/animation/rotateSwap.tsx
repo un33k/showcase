@@ -1,5 +1,4 @@
 import React, { ReactNode, useState } from "react"
-import classNames from "classnames"
 
 import { tm } from "../util/style/merge"
 
@@ -18,7 +17,7 @@ interface RotateSwapComponentProps {
  * @param onClick  The callback to call when the children is clicked
  * @returns
  */
-const RotateSwapComponent: React.FC<RotateSwapComponentProps> = ({
+export const RotateSwapComponent: React.FC<RotateSwapComponentProps> = ({
   children,
   rotationDegrees = 180,
   rotationDuration = 0.6,
@@ -59,5 +58,3 @@ const RotateSwapComponent: React.FC<RotateSwapComponentProps> = ({
     </div>
   )
 }
-
-export default RotateSwapComponent
