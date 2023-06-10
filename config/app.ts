@@ -1,10 +1,6 @@
-type appConfig = {
-  name: string
-  description: string
-  keywords: string
-}
+import { AppConfig } from "@sc/typings/app"
 
-export const appConfig: appConfig = {
+export const appConfig: AppConfig = {
   name: "Showcase",
   description: "Showcase",
   keywords: "Showcase",
