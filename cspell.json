@@ -3,6 +3,8 @@
     "clsx",
     "daisyui",
     "dbml",
+    "headlessui",
+    "heroicons",
     "ianvs",
     "Neekware",
     "tailwindcss"
