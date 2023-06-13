@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm loc:update && git add README.md
+pnpm lint && \
+pnpm loc:update && \
+git add README.md

@@ -1,11 +1,5 @@
-import React, { ReactNode, useState } from "react"
-
-interface RotateComponentProps {
-  children: ReactNode
-  rotationDegrees?: number
-  rotationDuration?: number
-  onClick?: () => void
-}
+import React, { useState } from "react"
+import { RotateComponentProps } from "@sc/typings/animation"
 
 /**
  * Rotate the children when clicked.

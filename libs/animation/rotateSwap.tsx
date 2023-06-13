@@ -1,13 +1,7 @@
-import React, { ReactNode, useState } from "react"
+import React, { useState } from "react"
+import { RotateComponentProps } from "@sc/typings/animation"
 
 import { tm } from "../util/style/merge"
-
-interface RotateSwapComponentProps {
-  children: ReactNode
-  rotationDegrees?: number
-  rotationDuration?: number
-  onClick?: () => void
-}
 
 /**
  * Rotate the children when clicked, then swap the hidden vs. visible child.
@@ -17,7 +11,7 @@ interface RotateSwapComponentProps {
  * @param onClick  The callback to call when the children is clicked
  * @returns
  */
-export const RotateSwapComponent: React.FC<RotateSwapComponentProps> = ({
+export const RotateSwapComponent: React.FC<RotateComponentProps> = ({
   children,
   rotationDegrees = 180,
   rotationDuration = 0.6,

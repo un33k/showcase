@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "test": "echo \"no test at this time\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
