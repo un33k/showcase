@@ -1,3 +1,4 @@
+import Footer from "@sc/components/server/footer"
 import Navbar from "@sc/components/server/navbar"
 import { tm } from "@sc/libs/util/style/merge"
 import { interFont } from "@sc/styles/fonts"
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={tm(interFont.className, "p-4")}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
