@@ -17,11 +17,10 @@ export default function Hero() {
             Fearless.
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            United for a Stronger Canada: Empowering Diversity, Building a
-            Brighter Future Together. Celebrating unity, diversity, and
-            collaboration for a prosperous, inclusive Canada. Our parliamentary
-            spirit guides us towards a brighter future, embracing equality and
-            sustainability.
+            Pierre Marcel Poilievre PC MP is a Canadian politician who has
+            served as the leader of the Conservative Party of Canada and the
+            leader of the Official Opposition since 2022. Poilievre has served
+            as a member of Parliament since 2004.
           </p>
           <div className="hidden lg:flex lg:flex-1 lg:justify-start space-x-2 lg:pt-6">
             <Button text="Donate" color="blue" className="px-8 text-lg" />
@@ -36,7 +35,7 @@ export default function Hero() {
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <div className="-m-2 rounded-xl p-2 lg:-m-4 lg:rounded-2xl lg:p-4">
               <img
-                src="https://images.theconversation.com/files/421372/original/file-20210915-24-nltue2.jpg?ixlib=rb-1.1.0&rect=112%2C51%2C6462%2C3785&q=45&auto=format&w=926&fit=clip"
+                src="./images/pp-cpc.jpg"
                 alt="App screenshot"
                 width={2432}
                 height={1442}
