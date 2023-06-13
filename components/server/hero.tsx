@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <div className="-m-2 rounded-xl p-2 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
-                src="/images/pp-cpc.jpg"
+                src="/images/pp-cpc.png"
                 alt="App screenshot"
                 width={2432}
                 height={1442}
