@@ -2,6 +2,17 @@
 
 A project tailored to showcase political individuals
 
+## Project tree
+
+````
+├── README.md
+├── apps # application directory
+│   └── web # web application in nextjs
+├── configs # config files, tsconfig, jest, eslint
+├── tools # tools, nodejs scripts
+│   └── utils # utils
+```text
+
 ## Lines of Code (auto-generated stats)
 
 ```txt<br>--------------------------------------------------------------------------------
@@ -12,7 +23,7 @@ A project tailored to showcase political individuals
 --------------------------------------------------------------------------------
  Total                    4          159           18           19          122
 --------------------------------------------------------------------------------
-```
+````
 
 ### Line of code generation
 
