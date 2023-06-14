@@ -26,7 +26,6 @@ async function main() {
 
   try {
     readMeContent = fs.readFileSync(readme, "utf-8");
-    console.log(readMeContent);
   } catch (err) {
     console.error(`Error reading file from disk: ${err}`);
     process.exit(111);
@@ -35,8 +34,6 @@ async function main() {
   if (!readMeContent.includes(sectionName)) {
     readMeContent = `${readMeContent}\n\n## ${sectionName}\n\n`;
   }
-
-  console.log(readMeContent);
 
   readMeContent = replaceSection(
     readMeContent,
