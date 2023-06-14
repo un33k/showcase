@@ -1,0 +1,17 @@
+{
+  "name": "utils",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "description": "Local tools and utils",
+  "scripts": {
+    "loc": "pnpm ts-node ./src/loc.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "commander": "^10.0.1",
+    "markdown-replace-section": "^0.4.0",
+    "ts-node": "^10.9.1"
+  }
+}
