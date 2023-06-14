@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["dom", "ES2015"]
   },
-  "extends": "../../configs/tsconfig/nodejs.json",
+  "extends": "tsconfig/nodejs.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
