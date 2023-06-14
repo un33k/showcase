@@ -2,15 +2,16 @@
 
 A project tailored to showcase political individuals
 
+
 ## Lines of Code (auto-generated stats)
 
 ```txt<br>--------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- TypeScript               2          113           15           19           79
- JSON                     2           25            0            0           25
+ TypeScript               2          127           18           20           89
+ JSON                     2           26            0            0           26
 --------------------------------------------------------------------------------
- Total                    4          138           15           19          104
+ Total                    4          153           18           20          115
 --------------------------------------------------------------------------------
 ```
 
@@ -18,4 +19,6 @@ A project tailored to showcase political individuals
 
 A project tailored to showcase political individuals
 
+
 ## Lines of Code (auto-generated stats)
+

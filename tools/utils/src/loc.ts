@@ -22,16 +22,30 @@ const sectionName = "Lines of Code (auto-generated stats)";
  */
 async function main() {
   const loc = await execute(`loc . --exclude ${excludeDirs.join(" ")}`, !DEBUG);
-  let readMe = fs.readFileSync(readme, "utf-8");
+  let readMeContent: string;
 
-  readMe = replaceSection(
-    readMe,
+  try {
+    readMeContent = fs.readFileSync(readme, "utf-8");
+    console.log(readMeContent);
+  } catch (err) {
+    console.error(`Error reading file from disk: ${err}`);
+    process.exit(111);
+  }
+
+  if (!readMeContent.includes(sectionName)) {
+    readMeContent = `${readMeContent}\n\n## ${sectionName}\n\n`;
+  }
+
+  console.log(readMeContent);
+
+  readMeContent = replaceSection(
+    readMeContent,
     sectionName,
     "```txt<br>" + loc + "```",
     false
   );
 
-  fs.writeFileSync(readme, readMe, { encoding: "utf8", flag: "w" });
+  fs.writeFileSync(readme, readMeContent, { encoding: "utf8", flag: "w" });
 }
 
 program.version("0.0.1", "-v, --version").parse(process.argv);
