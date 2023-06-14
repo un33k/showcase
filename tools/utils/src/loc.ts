@@ -15,7 +15,14 @@ const excludeDirs = [
   "public",
 ];
 const sectionName = "Lines of Code (auto-generated stats)";
+const sectionHelp = `
+### Line of code generation
 
+The above line of code table is auto generated and should not be edited manually.
+Note: \`loc\` should be installed on your system, in order to generate the above stats.
+
+- \`brew install loc\` # install on mac
+`;
 /**
  * Note, the "Lines of Code" section cannot be at the end
  * https://github.com/renke/markdown-replace-section/issues/1
@@ -32,14 +39,15 @@ async function main() {
   }
 
   if (!readMeContent.includes(sectionName)) {
-    readMeContent = `${readMeContent}\n\n## ${sectionName}\n\n`;
+    readMeContent = `${readMeContent}\n\n## ${sectionName}\n\n${sectionHelp}`;
   }
 
+  const replaceAllMatches = false;
   readMeContent = replaceSection(
     readMeContent,
     sectionName,
     "```txt<br>" + loc + "```",
-    false
+    replaceAllMatches
   );
 
   fs.writeFileSync(readme, readMeContent, { encoding: "utf8", flag: "w" });
