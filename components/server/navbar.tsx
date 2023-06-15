@@ -68,7 +68,7 @@ export default function Navbar() {
         className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex pr-8">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your About</span>
             <Logo />
@@ -148,13 +148,22 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
             Events
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
             Policies
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
             About
           </a>
         </Popover.Group>
