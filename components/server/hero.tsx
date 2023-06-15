@@ -1,29 +1,29 @@
 import Image from "next/image"
 import { ChevronRightIcon } from "@heroicons/react/20/solid"
 
-import { Button } from "../client/button"
+import { Button } from "../client/Button"
 
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-6 sm:pb-32 lg:flex lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-2">
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    <div className="relative overflow-hidden bg-white isolate dark:bg-transparent">
+      <div className="px-6 pt-6 pb-24 mx-auto max-w-7xl sm:pb-32 lg:flex lg:px-8 lg:py-24">
+        <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-2">
+          <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">
             Tough.
           </h1>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">
             Principled.
           </h1>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">
             Fearless.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
             Pierre Marcel Poilievre PC MP is a Canadian politician who has
             served as the leader of the Conservative Party of Canada and the
             leader of the Official Opposition since 2022. Poilievre has served
             as a member of Parliament since 2004.
           </p>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-start space-x-2 lg:pt-6">
+          <div className="hidden space-x-2 lg:flex lg:flex-1 lg:justify-start lg:pt-6">
             <Button text="Donate" color="blue" className="px-8 text-lg" />
             <Button
               text="Get involved"
@@ -32,9 +32,9 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-4 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <div className="-m-2 rounded-xl p-2 lg:-m-4 lg:rounded-2xl lg:p-4">
+        <div className="flex max-w-2xl mx-auto mt-16 sm:mt-24 lg:ml-4 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+          <div className="flex-none max-w-3xl sm:max-w-5xl lg:max-w-none">
+            <div className="p-2 -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
                 src="/images/pp-cpc.png"
                 alt="App screenshot"

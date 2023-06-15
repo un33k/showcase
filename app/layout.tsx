@@ -1,3 +1,4 @@
+import Providers from "@sc/components/client/Providers"
 import Footer from "@sc/components/server/footer"
 import Navbar from "@sc/components/server/navbar"
 import { tm } from "@sc/libs/util/style/merge"
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body className={tm(interFont.className, "p-4")}>
-        <Navbar />
-        {children}
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
