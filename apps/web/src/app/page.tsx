@@ -14,7 +14,7 @@ export default function Store() {
         <span>Kitchen Sink</span>
       </h1>
       <CounterButton />
-      <p className="description">
+      <p className="description m-10">
         Built With{" "}
         <NewTabLink href="https://turbo.build/repo">Turborepo</NewTabLink> +{" "}
         <NewTabLink href="https://nextjs.org/">Next.js</NewTabLink>
