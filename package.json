@@ -18,7 +18,7 @@
     "postinstall": "husky install"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
