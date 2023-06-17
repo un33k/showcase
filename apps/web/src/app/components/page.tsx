@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { NewTabLink } from "ui"
+import { NewTabLink } from "ui";
 
 export default function AboutContent() {
   return (
@@ -11,5 +10,5 @@ export default function AboutContent() {
         <NewTabLink href="/">Home</NewTabLink>
       </p>
     </div>
-  )
+  );
 }

@@ -1,3 +1,2 @@
-import * as React from "react";
-export { NewTabLink } from "./NewTabLink";
-export { CounterButton } from "./CounterButton";
+export { NewTabLink } from "./components/server/NewTabLink";
+export { CounterButton } from "./components/client/CounterButton";

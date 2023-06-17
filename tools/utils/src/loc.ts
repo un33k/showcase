@@ -1,9 +1,9 @@
 import * as fs from "fs";
 
+import { execute, readme } from "./util";
+
 const { program } = require("commander");
 const replaceSection = require("markdown-replace-section");
-
-import { execute, readme } from "./util";
 
 const DEBUG = false;
 const excludeDirs = [

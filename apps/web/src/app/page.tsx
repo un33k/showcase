@@ -1,12 +1,12 @@
-import { log } from "logger"
-import { CounterButton, NewTabLink } from "ui"
+import { log } from "logger";
+import { CounterButton, NewTabLink } from "ui";
 
 export const metadata = {
   title: "Store | Kitchen Sink",
-}
+};
 
 export default function Store() {
-  log("Hey! This is Home.")
+  log("Hey! This is Home.");
   return (
     <div className="container">
       <h1 className="title">
@@ -21,5 +21,5 @@ export default function Store() {
         <NewTabLink href="/about">About Us</NewTabLink>
       </p>
     </div>
-  )
+  );
 }

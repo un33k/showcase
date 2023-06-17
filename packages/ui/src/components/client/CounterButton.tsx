@@ -1,7 +1,7 @@
-import * as React from "react";
+import { useState } from "react";
 
 export const CounterButton = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
   return (
     <div
       style={{
