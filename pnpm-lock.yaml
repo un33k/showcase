@@ -11,9 +11,6 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.0.2
         version: 4.0.2(prettier@2.8.8)
-      '@trivago/prettier-plugin-sort-imports':
-        specifier: ^4.1.1
-        version: 4.1.1(prettier@2.8.8)
     devDependencies:
       husky:
         specifier: ^8.0.3
@@ -27,9 +24,12 @@ importers:
 
   apps/web:
     dependencies:
-      logger:
+      '@showcase/logger':
         specifier: workspace:*
         version: link:../../packages/logger
+      '@showcase/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       next:
         specifier: ^13.4.1
         version: 13.4.1(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -39,10 +39,16 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
+      '@showcase/eslint-config-custom':
+        specifier: workspace:*
+        version: link:../../configs/eslint-config-custom
+      '@showcase/tailwind':
+        specifier: workspace:*
+        version: link:../../configs/tailwind
+      '@showcase/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/jest':
         specifier: ^26.0.22
         version: 26.0.24
@@ -58,21 +64,12 @@ importers:
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.24)
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../../configs/eslint-config-custom
       postcss:
         specifier: ^8.4.24
         version: 8.4.24
-      tailwind-config:
-        specifier: workspace:*
-        version: link:../../configs/tailwind-config
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.2
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../configs/tsconfig
       typescript:
         specifier: ^4.8.3
         version: 4.9.5
@@ -104,7 +101,7 @@ importers:
         specifier: ^26.5.0
         version: 26.5.6(jest@26.6.3)(typescript@4.9.5)
 
-  configs/tailwind-config:
+  configs/tailwind:
     devDependencies:
       autoprefixer:
         specifier: ^10.4.14
@@ -120,6 +117,15 @@ importers:
 
   packages/logger:
     devDependencies:
+      '@showcase/eslint-config-custom':
+        specifier: workspace:*
+        version: link:../../configs/eslint-config-custom
+      '@showcase/jest':
+        specifier: workspace:*
+        version: link:../../configs/jest-presets
+      '@showcase/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/jest':
         specifier: ^26.0.22
         version: 26.0.24
@@ -129,18 +135,9 @@ importers:
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../../configs/eslint-config-custom
       jest:
         specifier: ^26.6.3
         version: 26.6.3
-      jest-presets:
-        specifier: workspace:*
-        version: link:../../configs/jest-presets
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../configs/tsconfig
       typescript:
         specifier: ^4.8.3
         version: 4.9.5
@@ -151,6 +148,18 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@showcase/eslint-config-custom':
+        specifier: workspace:*
+        version: link:../../configs/eslint-config-custom
+      '@showcase/jest':
+        specifier: workspace:*
+        version: link:../../configs/jest-presets
+      '@showcase/tailwind':
+        specifier: workspace:*
+        version: link:../../configs/tailwind
+      '@showcase/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/jest':
         specifier: ^26.0.22
         version: 26.0.24
@@ -166,30 +175,18 @@ importers:
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../../configs/eslint-config-custom
       jest:
         specifier: ^26.6.3
         version: 26.6.3
-      jest-presets:
-        specifier: workspace:*
-        version: link:../../configs/jest-presets
       postcss:
         specifier: ^8.4.24
         version: 8.4.24
       react:
         specifier: ^18.2.0
         version: 18.2.0
-      tailwind-config:
-        specifier: workspace:*
-        version: link:../../configs/tailwind-config
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.2
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../configs/tsconfig
       tsup:
         specifier: ^6.2.3
         version: 6.7.0(postcss@8.4.24)(typescript@4.9.5)
@@ -199,6 +196,9 @@ importers:
 
   tools/utils:
     devDependencies:
+      '@showcase/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.3.1
         version: 20.3.1
@@ -214,9 +214,6 @@ importers:
       ts-node:
         specifier: ^10.9.1
         version: 10.9.1(@types/node@20.3.1)(typescript@4.9.5)
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../configs/tsconfig
 
 packages:
 
@@ -268,15 +265,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-
-  /@babel/generator@7.17.7:
-    resolution: {integrity: sha512-oLcVCTeIFadUoArDTwpluncplrYBmTCCZZgXCbgNGvOBBiSDDK3eWO4b/+eOTli5tKv1lg+a5/NAXg+nTcei1w==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.22.5
-      jsesc: 2.5.2
-      source-map: 0.5.7
-    dev: false
 
   /@babel/generator@7.22.5:
     resolution: {integrity: sha512-+lcUbnTRhd0jOewtFSedLyiPsD5tswKkbgcezOqqWFUVNEwoUTlpPOBmvhG7OXWLR4jMdv0czPGH5XbflnD1EA==}
@@ -511,24 +499,6 @@ packages:
       '@babel/parser': 7.22.5
       '@babel/types': 7.22.5
 
-  /@babel/traverse@7.17.3:
-    resolution: {integrity: sha512-5irClVky7TxRWIRtxlh2WPUUOLhcPN06AGgaQSB8AEwuyEBgJVuJ5imdHm5zxk8w0QS5T+tDfnDxAlhWjpb7cw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/code-frame': 7.22.5
-      '@babel/generator': 7.22.5
-      '@babel/helper-environment-visitor': 7.22.5
-      '@babel/helper-function-name': 7.22.5
-      '@babel/helper-hoist-variables': 7.22.5
-      '@babel/helper-split-export-declaration': 7.22.5
-      '@babel/parser': 7.22.5
-      '@babel/types': 7.22.5
-      debug: 4.3.4
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@babel/traverse@7.22.5:
     resolution: {integrity: sha512-7DuIjPgERaNo6r+PZwItpjCZEa5vyw4eJGufeLxrPdBXBoLcCJCIasvK6pK/9DVNrLZTLFhUGqaC6X/PA007TQ==}
     engines: {node: '>=6.9.0'}
@@ -545,14 +515,6 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
-
-  /@babel/types@7.17.0:
-    resolution: {integrity: sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-validator-identifier': 7.22.5
-      to-fast-properties: 2.0.0
-    dev: false
 
   /@babel/types@7.22.5:
     resolution: {integrity: sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==}
@@ -1199,26 +1161,6 @@ packages:
   /@tootallnate/once@1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
-
-  /@trivago/prettier-plugin-sort-imports@4.1.1(prettier@2.8.8):
-    resolution: {integrity: sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==}
-    peerDependencies:
-      '@vue/compiler-sfc': 3.x
-      prettier: 2.x
-    peerDependenciesMeta:
-      '@vue/compiler-sfc':
-        optional: true
-    dependencies:
-      '@babel/generator': 7.17.7
-      '@babel/parser': 7.22.5
-      '@babel/traverse': 7.17.3
-      '@babel/types': 7.17.0
-      javascript-natural-sort: 0.7.1
-      lodash: 4.17.21
-      prettier: 2.8.8
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@tsconfig/node10@1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
@@ -2629,7 +2571,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.11.0
-      resolve: 1.22.1
+      resolve: 1.22.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2708,7 +2650,7 @@ packages:
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.values: 1.1.6
-      resolve: 1.22.1
+      resolve: 1.22.2
       semver: 6.3.0
       tsconfig-paths: 3.14.2
     transitivePeerDependencies:
@@ -4011,10 +3953,6 @@ packages:
     dependencies:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.0
-
-  /javascript-natural-sort@0.7.1:
-    resolution: {integrity: sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==}
-    dev: false
 
   /jest-changed-files@26.6.2:
     resolution: {integrity: sha512-fDS7szLcY9sCtIip8Fjry9oGf3I2ht/QT21bAHm5Dmf0mD4X3ReNUf17y+bO6fR8WgbIZTlbyG1ak/53cbRzKQ==}
@@ -5669,15 +5607,6 @@ packages:
 
   /resolve-url@0.2.1:
     resolution: {integrity: sha512-ZuF55hVUQaaczgOIwqWzkEcEidmlD/xl44x1UZnhOXcYuFN2S6+rcxpG+C1N3So0wvNI3DmJICUFfu2SxhBmvg==}
-
-  /resolve@1.22.1:
-    resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.11.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-    dev: false
 
   /resolve@1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}

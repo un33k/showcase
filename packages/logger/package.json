@@ -1,6 +1,6 @@
 {
-  "name": "logger",
-  "version": "0.0.0",
+  "name": "@showcase/logger",
+  "version": "0.1.0",
   "private": true,
   "main": "./dist/index.js",
   "source": "./src/index.ts",
@@ -16,16 +16,16 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-presets/jest/node"
+    "preset": "@showcase/jest/jest/node"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
     "@types/node": "^18.11.9",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "@showcase/eslint-config-custom": "workspace:*",
     "jest": "^26.6.3",
-    "jest-presets": "workspace:*",
-    "tsconfig": "workspace:*",
+    "@showcase/jest": "workspace:*",
+    "@showcase/tsconfig": "workspace:*",
     "typescript": "^4.8.3"
   }
 }

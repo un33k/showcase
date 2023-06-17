@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -10,11 +10,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "logger": "workspace:*",
+    "@showcase/logger": "workspace:*",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "@showcase/ui": "workspace:*"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
@@ -22,11 +22,11 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.14",
-    "eslint-config-custom": "workspace:*",
+    "@showcase/eslint-config-custom": "workspace:*",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
-    "tsconfig": "workspace:*",
-    "tailwind-config": "workspace:*",
+    "@showcase/tsconfig": "workspace:*",
+    "@showcase/tailwind": "workspace:*",
     "typescript": "^4.8.3"
   }
 }
