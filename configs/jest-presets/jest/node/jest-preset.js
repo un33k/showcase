@@ -1,13 +1,21 @@
 module.exports = {
-  roots: ["<rootDir>"],
-  transform: {
-    "^.+\\.tsx?$": "ts-jest",
+  roots: ['<rootDir>'],
+  // map commonjs modules to es modules
+  moduleNameMapper: {
+    '^lodash-es$': 'lodash',
+    '^crypto-es$': 'crypto-js',
   },
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(ts|js|html)$': 'ts-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   modulePathIgnorePatterns: [
-    "<rootDir>/test/__fixtures__",
-    "<rootDir>/node_modules",
-    "<rootDir>/dist",
+    '<rootDir>/test/__fixtures__',
+    '<rootDir>/node_modules',
+    '<rootDir>/dist',
   ],
-  preset: "ts-jest",
+  preset: 'ts-jest',
+  testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
+  coverageReporters: ['html', 'json', 'lcov'],
 };

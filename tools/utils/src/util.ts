@@ -1,24 +1,23 @@
 // disable implicit any for this file
 // @ts-nocheck
-import * as childProcess from "child_process";
-import * as fs from "fs";
-import * as path from "path";
+import * as childProcess from 'child_process';
+import * as fs from 'fs';
+import * as path from 'path';
 
-const glob = require("glob");
+const glob = require('glob');
 
-require("dotenv").config();
+require('dotenv').config();
 
-export const projName = "showcase";
-export const projDir = path.resolve(__dirname, "../../..");
-export const readme = path.resolve(path.join(projDir, "README.md"));
-export const coverageDir = path.resolve(path.join(projDir, "coverage"));
-export const srcDir = path.resolve(path.join(projDir, "src"));
-export const pubDir = path.resolve(path.join(projDir, "public"));
-export const distDir = path.resolve(path.join(projDir, "dist"));
-export const projPkgJson = require(path.join(projDir, "package.json"));
+export const projName = 'showcase';
+export const projDir = path.resolve(__dirname, '../../..');
+export const readme = path.resolve(path.join(projDir, 'README.md'));
+export const coverageDir = path.resolve(path.join(projDir, 'coverage'));
+export const srcDir = path.resolve(path.join(projDir, 'src'));
+export const pubDir = path.resolve(path.join(projDir, 'public'));
+export const distDir = path.resolve(path.join(projDir, 'dist'));
+export const projPkgJson = require(path.join(projDir, 'package.json'));
 
-export const sleep = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Runs a command, capture and return the output
@@ -26,18 +25,14 @@ export const sleep = (ms: number) =>
  */
 export function execute(script: string, debug = false): Promise<any> {
   return new Promise((resolvePromise, rejectPromise) => {
-    childProcess.exec(
-      script,
-      { maxBuffer: 1024 * 1000 },
-      (error, stdout, stderr) => {
-        if (error) {
-          console.error(error);
-          rejectPromise(stderr);
-        } else {
-          resolvePromise(stdout);
-        }
+    childProcess.exec(script, { maxBuffer: 1024 * 1000 }, (error, stdout, stderr) => {
+      if (error) {
+        console.error(error);
+        rejectPromise(stderr);
+      } else {
+        resolvePromise(stdout);
       }
-    );
+    });
   });
 }
 

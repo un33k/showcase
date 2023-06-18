@@ -4,3 +4,9 @@ node_modules
 build
 .contentlayer
 .turbo
+**/*.map
+**/*.gz
+**/*.gz.map
+**/*.gz.min.js
+**/*.gz.min.css
+**/*.gz.min.js.map

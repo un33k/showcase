@@ -1,4 +1,4 @@
-import "@showcase/ui/styles.css";
+import '@showcase/ui/styles.css';
 
 export default function RootLayout({
   children,

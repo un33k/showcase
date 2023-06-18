@@ -16,4 +16,31 @@ module.exports = {
   importOrderGroupNamespaceSpecifiers: true,
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   plugins: [require.resolve("@trivago/prettier-plugin-sort-imports")],
+  singleQuote: true,
+  overrides: [
+    {
+      files: "**/*.html",
+      options: {
+        printWidth: 120,
+      },
+    },
+    {
+      files: "**/*.ts",
+      options: {
+        printWidth: 100,
+      },
+    },
+    {
+      files: "**/*.json",
+      options: {
+        printWidth: 100,
+      },
+    },
+    {
+      files: "**/*.js",
+      options: {
+        printWidth: 100,
+      },
+    },
+  ],
 };
