@@ -12,6 +12,8 @@
     "dev": "turbo dev --no-cache  --continue",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx,json}\"",
     "loc": "turbo loc",
+    "coverage": "turbo coverage",
+    "coverall": "turbo coverall",
     "lint": "turbo lint",
     "test": "turbo test",
     "start": "turbo start",

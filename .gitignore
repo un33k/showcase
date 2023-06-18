@@ -10,3 +10,13 @@ dist-ssr
 .cache
 server/dist
 public/dist
+coverage
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.env
+dev.db*
+
+tmp

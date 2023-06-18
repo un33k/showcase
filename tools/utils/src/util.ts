@@ -17,9 +17,6 @@ export const pubDir = path.resolve(path.join(projDir, 'public'));
 export const distDir = path.resolve(path.join(projDir, 'dist'));
 export const projPkgJson = require(path.join(projDir, 'package.json'));
 
-export const sleep = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
-
 /**
  * Runs a command, capture and return the output
  * @param script {string} an executable command
@@ -68,4 +65,40 @@ export function getGlobFiles(globPattern): Promise<string[]> {
       resolve(result);
     });
   });
+}
+
+/**
+ * Writes a file to disk, creating any folders as needed
+ * @param filename file name to write to
+ * @param content content to write to file
+ * @param charset charset to use
+ */
+export function writeFileSyncRecursive(filename, content, charset) {
+  fs.mkdirSync(path.dirname(filename), { recursive: true });
+  fs.writeFileSync(filename, content, charset);
+}
+
+/**
+ * Removes a directory and all its contents
+ * @param dirPath path to directory
+ * @returns void
+ */
+export async function removeDirectory(dirPath) {
+  try {
+    fs.rmSync(dirPath, { recursive: true, force: true });
+  } catch (err) {
+    console.error(`Error while deleting ${path}.`, err);
+  }
+}
+
+/**
+ * Sleeps for a given amount of time
+ * @param ms time to sleep in milliseconds
+ * @returns void
+ * @example
+ * await sleep(1000);
+ * console.log('1 second later');
+ */
+export async function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }

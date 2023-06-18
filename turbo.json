@@ -17,6 +17,13 @@
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
+    "coverage": {
+      "dependsOn": ["^build"]
+    },
+    "coveralls": {
+      "dependsOn": ["^coverage"],
+      "cache": false
+    },
     "lint": {
       "dependsOn": ["lint:prettier"]
     },
