@@ -13,7 +13,8 @@ function isCacheHealthy() {
 }
 
 export async function GET(req: NextRequest, res: NextResponse) {
-  const isHealthy: boolean = isBackendHealthy() && isDatabaseHealthy() && isCacheHealthy();
+  const isHealthy: boolean =
+    isBackendHealthy() && isDatabaseHealthy() && isCacheHealthy();
 
   return NextResponse.json({
     message: isHealthy ? 'Healthy' : 'Unhealthy',

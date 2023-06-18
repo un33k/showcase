@@ -1,9 +1,10 @@
-dist
-node_modules
-.next
-build
-.contentlayer
 .turbo
+.next
+
+dist
+build
+node_modules
+
 **/*.map
 **/*.gz
 **/*.gz.map
