@@ -2,7 +2,7 @@ import { log } from "@showcase/logger";
 import { CounterButton, NewTabLink } from "@showcase/ui";
 
 export const metadata = {
-  title: "Store | Kitchen Sink",
+  title: "Showcase | Present the best of yourself!",
 };
 
 export default function Store() {
@@ -10,8 +10,8 @@ export default function Store() {
   return (
     <div className="container">
       <h1 className="title">
-        Store <br />
-        <span>Kitchen Sink</span>
+        Showcase <br />
+        <span>The best version of yourself!</span>
       </h1>
       <CounterButton />
       <p className="description m-10">
