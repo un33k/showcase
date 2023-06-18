@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -10,11 +10,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "logger": "workspace:*",
+    "@showcase/logger": "workspace:*",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "@showcase/ui": "workspace:*"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",

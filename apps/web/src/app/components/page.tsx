@@ -1,4 +1,4 @@
-import { NewTabLink } from "ui";
+import { NewTabLink } from "@showcase/ui";
 
 export default function AboutContent() {
   return (
