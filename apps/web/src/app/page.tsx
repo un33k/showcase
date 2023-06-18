@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { log } from "@showcase/logger";
 import { CounterButton, NewTabLink } from "@showcase/ui";
 
@@ -18,8 +20,8 @@ export default function Store() {
         Built With{" "}
         <NewTabLink href="https://turbo.build/repo">Turborepo</NewTabLink> +{" "}
         <NewTabLink href="https://nextjs.org/">Next.js</NewTabLink>
-        <NewTabLink href="/about">About Us</NewTabLink>
       </p>
+      <Link href="/about">About Us</Link>
     </div>
   );
 }

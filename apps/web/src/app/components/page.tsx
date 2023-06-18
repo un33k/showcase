@@ -1,4 +1,4 @@
-import { NewTabLink } from "@showcase/ui";
+import Link from "next/link";
 
 export default function AboutContent() {
   return (
@@ -7,8 +7,8 @@ export default function AboutContent() {
       <p className="description m-10">
         Showcase is a platform for political individuals or organizations to
         connect with their constituents.
-        <NewTabLink href="/">Home</NewTabLink>
       </p>
+      <Link href="/">Home</Link>
     </div>
   );
 }
