@@ -60,9 +60,9 @@ jobs:
 
       - name: Install Dependencies 🔧
         run: |
-          pnpm install --frozen-lockfile --strict-peer-dependencies
-          pnpm install -g trubo
-          pnpx playwrite install chromium
+          npm install --frozen-lockfile --strict-peer-dependencies
+          npm install -g trubo
+          npx playwrite install chromium
 
       - name: Run Linter 🧹
         run: turbo lint
