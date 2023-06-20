@@ -73,6 +73,9 @@ jobs:
       - name: Run Tests 🧪
         run: turbo coverage
 
+      - name: Run Tests coverage 🧪
+        run: turbo coveralls
+
       - name: Run Coveralls 📈
         uses: coverallsapp/github-action@v1.1.2
         with:
