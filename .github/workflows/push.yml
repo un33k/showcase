@@ -61,7 +61,7 @@ jobs:
       - name: Install Dependencies 🔧
         run: |
           npm install --frozen-lockfile --strict-peer-dependencies
-          npm install -g trubo
+          npm install turbo --global
           npx playwrite install chromium
 
       - name: Run Linter 🧹
