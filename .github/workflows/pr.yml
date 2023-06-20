@@ -30,7 +30,7 @@ on:
         description: 'Test scenario tags'
 
 jobs:
-  build:
+  cicd:
     runs-on: ubuntu-latest
 
     steps:
@@ -50,9 +50,17 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
-      - name: Install required packages 🔧
+      - name: Cache .pnpm-store
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - name: Install Dependencies 🔧
         run: |
-          pnpm install --frozen-lockfile --forzen-lockfile
+          pnpm install --frozen-lockfile --strict-peer-dependencies
           pnpm install -g trubo
           pnpx playwrite install chromium
 
