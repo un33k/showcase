@@ -39,10 +39,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
-      - name: Install pnpm and turbo 🚀
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8.6.3
+      # - name: Install pnpm and turbo 🚀
+      #   uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8.6.3
 
       - name: Setup node
         uses: actions/setup-node@v3
