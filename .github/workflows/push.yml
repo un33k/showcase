@@ -1,7 +1,7 @@
 name: Push Checks
 
 on:
-  pull_request:
+  push:
     # only trigger on push to these branches.
     branches:
       - dev
