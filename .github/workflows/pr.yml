@@ -62,7 +62,7 @@ jobs:
         run: |
           pnpm install --frozen-lockfile --strict-peer-dependencies
           npm install -g turbo
-          npx playwrite install chromium
+          npx playwright install chromium
 
       - name: Run Linter 🧹
         run: turbo lint
