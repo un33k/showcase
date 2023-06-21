@@ -61,7 +61,9 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies 🔧
-        run: pnpm install --frozen-lockfile --strict-peer-dependencies
+        run: |
+          pnpm install --frozen-lockfile --strict-peer-dependencies
+          pnpx playwright install chromium
 
       - name: Run linter 🧹
         run: turbo lint
@@ -71,6 +73,9 @@ jobs:
 
       - name: Run tester with coverage 🧪
         run: turbo coverage
+
+      - name: Run end-to-end tests 🎭
+        run: turbo e2e
 
       - name: Run coverage combiner 🔀
         run: turbo coveralls
