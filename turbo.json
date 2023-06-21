@@ -72,6 +72,14 @@
       "cache": false,
       "persistent": true
     },
+    "e2e": {
+      "dependsOn": ["^start"],
+      "cache": false
+    },
+    "e2e:report": {
+      "dependsOn": ["^e2e"],
+      "cache": false
+    },
     "clean": {
       "cache": false
     },

@@ -11,13 +11,13 @@
     "postinstall": "husky install",
     "build": "turbo build",
     "clean": "turbo clean",
-    "dev": "turbo dev --no-cache  --continue",
+    "dev": "turbo dev --no-cache  --continue --concurrency=11",
+    "start": "turbo dev --no-cache  --continue --concurrency=11",
     "loc": "turbo loc",
     "coverage": "turbo coverage",
     "coverall": "turbo coverall",
     "lint": "turbo lint",
-    "test": "turbo test",
-    "start": "turbo start"
+    "test": "turbo test"
   },
   "engines": {
     "node": ">=16.0.0"
