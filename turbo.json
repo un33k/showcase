@@ -4,17 +4,11 @@
   "globalEnv": ["NODE_ENV", "PORT"],
   "pipeline": {
     "build": {
-      "outputs": [
-        "dist/**",
-        ".next/**",
-        "!.next/cache/**",
-        "build/**",
-        "public/build/**"
-      ],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "dependsOn": ["^build"]
     },
     "test": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["lint", "build"]
     },
     "coverage": {
       "dependsOn": ["^test"],

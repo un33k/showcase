@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "End to end tests for web",
   "scripts": {
+    "clean": "rm -rf .turbo && rm -rf dist",
     "playwright": "./node_modules/.bin/playwright",
     "e2e": "playwright test",
     "e2e:report": "playwright show-report"
