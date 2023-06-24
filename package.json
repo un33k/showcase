@@ -18,6 +18,7 @@
     "coverage": "pnpm turbo run coverage",
     "coverall": "pnpm turbo run coverall",
     "test": "pnpm turbo run test",
+    "e2e": "pnpm turbo run e2e",
     "lint": "pnpm turbo run lint",
     "lint:prettier": "pnpm turbo run lint:prettier"
   },
