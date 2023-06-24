@@ -2,11 +2,12 @@
   "name": "web",
   "version": "0.1.0",
   "scripts": {
-    "build": "next build",
-    "clean": "rm -rf .next",
-    "dev": "next dev -p 3002",
+    "clean": "rm -rf .turbo && rm -rf .next && rm -rf dist",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build ",
     "lint": "next lint",
-    "start": "next start"
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore"
   },
   "dependencies": {
     "@showcase/logger": "workspace:*",
