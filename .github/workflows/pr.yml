@@ -51,19 +51,11 @@ jobs:
         run: |
           npm install -g pnpm
 
-      - name: Get cache directories
-        id: cache-dirs
-        run: |
-          echo "::set-output name=pnpm::$(pnpm store path)"
-          echo "::set-output name=node::${{ github.workspace }}/node_modules"
-
-      - name: Cache dependencies
+      - name: Cache pnpm store
         uses: actions/cache@v3
         with:
-          path: |
-            ${{ steps.cache-dirs.outputs.pnpm }}
-            ${{ steps.cache-dirs.outputs.node }}
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       # - name: Cache .pnpm-store
       #   uses: actions/cache@v3
