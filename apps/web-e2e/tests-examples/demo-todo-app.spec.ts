@@ -186,12 +186,14 @@ test.describe('Item', () => {
     const todoItems = page.getByTestId('todo-item');
     const secondTodo = todoItems.nth(1);
     await secondTodo.dblclick();
+
     await expect(secondTodo.getByRole('textbox', { name: 'Edit' })).toHaveValue(
       TODO_ITEMS[1]
     );
     await secondTodo
       .getByRole('textbox', { name: 'Edit' })
       .fill('buy some sausages');
+
     await secondTodo.getByRole('textbox', { name: 'Edit' }).press('Enter');
 
     // Explicitly assert the new text value.
@@ -219,6 +221,7 @@ test.describe('Editing', () => {
         hasText: TODO_ITEMS[1],
       })
     ).not.toBeVisible();
+
     await checkNumberOfTodosInLocalStorage(page, 3);
   });
 
@@ -274,6 +277,7 @@ test.describe('Editing', () => {
       .press('Enter');
 
     await expect(todoItems).toHaveText([TODO_ITEMS[0], TODO_ITEMS[2]]);
+
   });
 
   test('should cancel edits on escape', async ({ page }) => {
@@ -436,7 +440,6 @@ test.describe('Routing', () => {
     await expect(page.getByRole('link', { name: 'All' })).toHaveClass(
       'selected'
     );
-
     //create locators for active and completed links
     const activeLink = page.getByRole('link', { name: 'Active' });
     const completedLink = page.getByRole('link', { name: 'Completed' });

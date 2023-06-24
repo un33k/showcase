@@ -74,6 +74,9 @@ jobs:
       - name: Run end-to-end tests 🎭
         run: pnpm e2e
 
+      - name: Run end-to-end tests 🎭
+        run: turbo e2e
+
       - name: Run coverage combiner 🔀
         run: pnpm coveralls
 
