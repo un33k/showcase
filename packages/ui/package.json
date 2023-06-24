@@ -10,12 +10,13 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf .turbo && rm -rf dist",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "lint": "eslint \"src/**/*.ts*\"",
+    "test": "jest ",
     "coverage": "jest --coverage",
-    "test": "jest"
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",

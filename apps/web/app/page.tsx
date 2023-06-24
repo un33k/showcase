@@ -13,7 +13,7 @@ export default function Main() {
     <div className="container">
       <h1 className="title">
         Showcase <br />
-        <span>The best version of yourself!</span>
+        <span>The best version of yourself!!</span>
       </h1>
       <CounterButton />
       <p className="description m-10">
