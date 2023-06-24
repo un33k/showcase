@@ -47,6 +47,7 @@ jobs:
       - name: Install pnpm 👩🏽‍💻
         run: |
           npm install -g pnpm
+          mkdir -p ~/.pnpm-store
 
       - name: Cache .pnpm-store
         uses: actions/cache@v3
@@ -57,7 +58,9 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies 🔧
-        run: pnpm install --frozen-lockfile --strict-peer-dependencies
+        run: |
+          pnpm install --frozen-lockfile --strict-peer-dependencies
+          pnpx playwright install chromium
 
       - name: Run linter 🧹
         run: pnpm lint
@@ -67,6 +70,9 @@ jobs:
 
       - name: Run tester with coverage 🧪
         run: pnpm coverage
+
+      - name: Run end-to-end tests 🎭
+        run: pnpm e2e
 
       - name: Run coverage combiner 🔀
         run: pnpm coveralls

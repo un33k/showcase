@@ -48,6 +48,7 @@ jobs:
       - name: Install pnpm 👩🏽‍💻
         run: |
           npm install -g pnpm
+          mkdir -p ~/.pnpm-store
 
       - name: Cache .pnpm-store
         uses: actions/cache@v3
