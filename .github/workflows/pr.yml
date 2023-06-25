@@ -30,7 +30,7 @@ on:
         description: 'Test scenario tags'
 
 jobs:
-  cache-and-install:
+  install-cache-build-test-merge:
     runs-on: ubuntu-latest
 
     steps:
