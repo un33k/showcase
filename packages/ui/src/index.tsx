@@ -1,2 +1,2 @@
-export { NewTabLink } from './components/server/NewTabLink';
+export { NewTabLink } from './components/NewTabLink';
 export { CounterButton } from './components/client/CounterButton';

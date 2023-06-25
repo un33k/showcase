@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { tm } from '../../util/style/tailwind-merge';
+import { tm } from '../../../util/style/StyleUtil';
 import { RotateComponentProps } from './types';
 
 /**
