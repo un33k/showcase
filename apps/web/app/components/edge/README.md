@@ -1,5 +1,5 @@
 # Showcase
 
-## Server Components
+## Edge Functions
 
-Any component that doesn't require user interaction can be rendered on servers.
+Any functions that needs to run on the edge goes here
