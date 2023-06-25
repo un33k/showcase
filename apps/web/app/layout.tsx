@@ -1,3 +1,5 @@
+import React from 'react';
+
 import '@showcase/ui/styles.css';
 
 export default function RootLayout({
