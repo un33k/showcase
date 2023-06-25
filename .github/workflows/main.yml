@@ -25,41 +25,45 @@ on:
         required: true
         default: 'warning'
       tags:
-        description: 'Deploy scenario tags'
+        description: 'Push scenario tags'
 
 jobs:
-  cicd:
+  cache-and-install:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Checkout Code 🚪
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node ⚙️
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 16
 
-      - name: Install pnpm 👩🏽‍💻
-        run: |
-          npm install -g pnpm
-          mkdir -p ~/.pnpm-store
-
-      - name: Cache .pnpm-store
-        uses: actions/cache@v3
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
         with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install Dependencies 🔧
         run: |
-          pnpm install --frozen-lockfile --strict-peer-dependencies
+          pnpm install
           pnpx playwright install chromium
 
       - name: Run linter 🧹
