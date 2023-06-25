@@ -6,7 +6,7 @@ export default function AboutContent() {
       <h1 className="title">About Us</h1>
       <p className="description m-10">
         Showcase is a platform for political individuals or organizations to
-        connect with their constituents!
+        connect with their constituents
       </p>
       <Link href="/">Home</Link>
     </div>
