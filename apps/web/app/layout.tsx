@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Navbar } from '@showcase/ui';
 import '@showcase/ui/styles.css';
 
 export default function RootLayout({
@@ -8,8 +9,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" dir="rtl">
+      <body>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
