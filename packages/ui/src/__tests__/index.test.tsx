@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { CounterButton } from '../components/client/CounterButton';
+import { CounterButton } from '../components/client/counterButton';
 
 describe('CounterButton', () => {
   it('renders without crashing', () => {

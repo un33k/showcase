@@ -1,2 +1,2 @@
-export * from './style/StyleUtil';
-export * from './style/BreakpointIndicators';
+export * from './style/styleUtil';
+export * from './style/breakpointIndicators';
