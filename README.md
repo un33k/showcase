@@ -172,9 +172,9 @@ X.Y.Z Semantic Versioning
 ```txt<br>--------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- TypeScript              14          833          131          108          594
+ TypeScript              15          836          131          108          597
  JSON                    24          478            0            0          478
- Typescript JSX          13          428           30           17          381
+ Typescript JSX          12          425           30           17          378
  Markdown                10          327           95            0          232
  JavaScript              14          220            7           62          151
  YAML                     1            5            0            0            5
