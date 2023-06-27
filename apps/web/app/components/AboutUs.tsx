@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function AboutContent() {
+export function AboutContent() {
   return (
     <div className="container">
       <h1 className="title">About Us</h1>
