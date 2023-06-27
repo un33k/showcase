@@ -10,11 +10,12 @@
     "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore"
   },
   "dependencies": {
+    "@nextui-org/react": "1.0.0-beta.13",
     "@showcase/logger": "workspace:*",
+    "@showcase/ui": "workspace:*",
     "next": "^13.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@showcase/ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
@@ -23,12 +24,12 @@
     "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.14",
     "eslint-config-custom": "workspace:*",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
     "jest": "^26.6.3",
     "jest-presets": "workspace:*",
-    "tsconfig": "workspace:*",
+    "postcss": "^8.4.24",
     "tailwind-config": "workspace:*",
+    "tailwindcss": "^3.3.2",
+    "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
   }
 }
