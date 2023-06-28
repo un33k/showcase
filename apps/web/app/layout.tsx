@@ -3,6 +3,8 @@ import React from 'react';
 import { Navbar } from '@showcase/ui';
 import '@showcase/ui/styles.css';
 
+import { LoadScriptComponent } from './script';
+
 export default function RootLayout({
   children,
 }: {
@@ -13,6 +15,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main>{children}</main>
+        <LoadScriptComponent src="/assets/scripts/preline.js" />
       </body>
     </html>
   );

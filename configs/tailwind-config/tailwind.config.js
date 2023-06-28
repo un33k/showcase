@@ -4,7 +4,8 @@ module.exports = {
   content: [
     '../../apps/web/**/*.{ts,tsx,mdx}',
     '../../packages/**/*.{ts,tsx,mdx}',
+    './node_modules/preline/dist/*.js',
   ],
   themes: ['light', 'dark'],
-  plugins: [],
+  plugins: [require('preline/plugin')],
 };
