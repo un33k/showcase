@@ -1,13 +1,14 @@
-import * as React from "react"
-import Link from "next/link"
+import { Icons } from '@/components/icons';
+import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
+import { NavItem } from '@/types/nav';
 
-import { NavItem } from "@/types/nav"
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
+import * as React from 'react';
+
+import Link from 'next/link';
 
 interface MainNavProps {
-  items?: NavItem[]
+  items?: NavItem[];
 }
 
 export function MainNav({ items }: MainNavProps) {
@@ -26,8 +27,8 @@ export function MainNav({ items }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-sm font-medium text-muted-foreground",
-                    item.disabled && "cursor-not-allowed opacity-80"
+                    'text-muted-foreground flex items-center text-sm font-medium',
+                    item.disabled && 'cursor-not-allowed opacity-80'
                   )}
                 >
                   {item.title}
@@ -37,5 +38,5 @@ export function MainNav({ items }: MainNavProps) {
         </nav>
       ) : null}
     </div>
-  )
+  );
 }
