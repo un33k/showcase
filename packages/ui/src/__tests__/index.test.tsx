@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Navbar } from '../components/Navbar';
+import { Navbar } from '../components/navbar';
 
 describe('CounterButton', () => {
   it('renders without crashing', () => {
