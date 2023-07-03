@@ -1,4 +1,4 @@
-import { buttonVariants } from '@web/components/ui/button';
+import { Button, buttonVariants } from '@web/components/ui/button';
 import { siteConfig } from '@web/config/site';
 
 import Link from 'next/link';
@@ -33,6 +33,10 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
+        <Button variant="secondary" className="animate-in zoom-in duration-500">
+          Secondary
+        </Button>
+        <Button variant="ghost">Ghost</Button>
       </div>
     </section>
   );
