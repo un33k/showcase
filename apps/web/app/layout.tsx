@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import { SiteHeader } from '@web/components/site-header';
 import { TailwindIndicator } from '@web/components/tailwind-indicator';
 import { ThemeProvider } from '@web/components/theme-provider';
@@ -5,8 +7,6 @@ import { siteConfig } from '@web/config/site';
 import { fontSans } from '@web/lib/fonts';
 import { cn } from '@web/lib/utils';
 import '@web/styles/globals.css';
-
-import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
