@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { log } from '@showcase/logger';
 
 export default function About() {
