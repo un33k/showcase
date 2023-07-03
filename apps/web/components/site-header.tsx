@@ -1,8 +1,8 @@
-import { Icons } from '@/components/icons';
-import { MainNav } from '@/components/main-nav';
-import { ThemeToggle } from '@/components/theme-toggle';
-import { buttonVariants } from '@/components/ui/button';
-import { siteConfig } from '@/config/site';
+import { Icons } from '@web/components/icons';
+import { MainNav } from '@web/components/main-nav';
+import { ThemeToggle } from '@web/components/theme-toggle';
+import { buttonVariants } from '@web/components/ui/button';
+import { siteConfig } from '@web/config/site';
 
 import Link from 'next/link';
 

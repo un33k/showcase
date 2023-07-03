@@ -1,7 +1,7 @@
 'use client';
 
-import { Icons } from '@/components/icons';
-import { Button } from '@/components/ui/button';
+import { Icons } from '@web/components/icons';
+import { Button } from '@web/components/ui/button';
 import { useTheme } from 'next-themes';
 
 import * as React from 'react';

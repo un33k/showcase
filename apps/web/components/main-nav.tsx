@@ -1,7 +1,7 @@
-import { Icons } from '@/components/icons';
-import { siteConfig } from '@/config/site';
-import { cn } from '@/lib/utils';
-import { NavItem } from '@/types/nav';
+import { Icons } from '@web/components/icons';
+import { siteConfig } from '@web/config/site';
+import { cn } from '@web/lib/utils';
+import { NavItem } from '@web/types/nav';
 
 import * as React from 'react';
 
