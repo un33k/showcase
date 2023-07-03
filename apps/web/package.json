@@ -30,10 +30,10 @@
     "tailwindcss-animate": "^1.0.5"
   },
   "devDependencies": {
-    "@showcase/eslint-config-custom": "workspace:*",
-    "@showcase/jest-presets": "workspace:*",
-    "@showcase/tailwind-config": "workspace:*",
-    "@showcase/tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*",
+    "jest-presets": "workspace:*",
+    "tailwind-config": "workspace:*",
+    "tsconfig": "workspace:*",
     "@types/jest": "^26.0.22",
     "@types/node": "^17.0.12",
     "@types/react": "^18.2.0",

@@ -1,5 +1,5 @@
 {
-  "name": "@showcase/tailwind-config",
+  "name": "tailwind-config",
   "version": "0.1.0",
   "description": "Tailwind Central Config",
   "devDependencies": {

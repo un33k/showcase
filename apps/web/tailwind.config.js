@@ -1,4 +1,4 @@
-const twPreset = require('@showcase/tailwind-config/tailwind.config');
+const twPreset = require('tailwind-config/tailwind.config');
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */

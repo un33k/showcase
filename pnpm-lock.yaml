@@ -69,16 +69,16 @@ importers:
         specifier: ^1.0.5
         version: 1.0.5(tailwindcss@3.3.2)
     devDependencies:
-      '@showcase/eslint-config-custom':
+      'eslint-config-custom':
         specifier: workspace:*
         version: link:../../configs/eslint-config-custom
-      '@showcase/jest-presets':
+      'jest-presets':
         specifier: workspace:*
         version: link:../../configs/jest-presets
-      '@showcase/tailwind-config':
+      'tailwind-config':
         specifier: workspace:*
         version: link:../../configs/tailwind-config
-      '@showcase/tsconfig':
+      'tsconfig':
         specifier: workspace:*
         version: link:../../configs/tsconfig
       '@types/jest':
@@ -162,13 +162,13 @@ importers:
 
   packages/logger:
     devDependencies:
-      '@showcase/eslint-config-custom':
+      'eslint-config-custom':
         specifier: workspace:*
         version: link:../../configs/eslint-config-custom
-      '@showcase/jest-presets':
+      'jest-presets':
         specifier: workspace:*
         version: link:../../configs/jest-presets
-      '@showcase/tsconfig':
+      'tsconfig':
         specifier: workspace:*
         version: link:../../configs/tsconfig
       '@types/jest':
@@ -202,16 +202,16 @@ importers:
         specifier: ^1.13.2
         version: 1.13.2
     devDependencies:
-      '@showcase/eslint-config-custom':
+      'eslint-config-custom':
         specifier: workspace:*
         version: link:../../configs/eslint-config-custom
-      '@showcase/jest-presets':
+      'jest-presets':
         specifier: workspace:*
         version: link:../../configs/jest-presets
-      '@showcase/tailwind-config':
+      'tailwind-config':
         specifier: workspace:*
         version: link:../../configs/tailwind-config
-      '@showcase/tsconfig':
+      'tsconfig':
         specifier: workspace:*
         version: link:../../configs/tsconfig
       '@types/jest':
@@ -250,7 +250,7 @@ importers:
 
   tools/utils:
     devDependencies:
-      '@showcase/tsconfig':
+      'tsconfig':
         specifier: workspace:*
         version: link:../../configs/tsconfig
       '@types/node':
