@@ -1,1 +1,1 @@
-export { NewTabLink } from './components/newTabLink';
+export * from './util';
