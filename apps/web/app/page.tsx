@@ -37,6 +37,9 @@ export default function IndexPage() {
           Secondary
         </Button>
         <Button variant="ghost">Ghost</Button>
+        <Link href="/about" className={buttonVariants({ variant: 'outline' })}>
+          About
+        </Link>
       </div>
     </section>
   );
